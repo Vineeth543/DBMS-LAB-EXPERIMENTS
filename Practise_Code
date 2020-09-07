@@ -1,6 +1,6 @@
 **Schema (MySQL v5.7)**
 
-    create table student(USN integer primary key,NAME varchar(10),PHNO integer,branch varchar(4));
+    create table student(USN integer primary key,NAME varchar(10),PHNO integer,BRANCH varchar(4));
     insert into student values(101,'ABHISHEKH',1234,'CSE');
     insert into student values(102,'KIRAN',2345,'CSE');
     insert into student values(103,'SURESH',3456,'ISE');
@@ -14,7 +14,7 @@
 
     select * from student;
 
-| USN | NAME      | PHNO | branch |
+| USN | NAME      | PHNO | BRANCH |
 | --- | --------- | ---- | ------ |
 | 101 | ABHISHEKH | 1234 | CSE    |
 | 102 | KIRAN     | 2345 | CSE    |
