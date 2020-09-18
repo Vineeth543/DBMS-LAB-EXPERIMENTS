@@ -1,2 +1,3 @@
 # DBMS_LAB
-Code_1
+Practice_Code
+Lab_1
