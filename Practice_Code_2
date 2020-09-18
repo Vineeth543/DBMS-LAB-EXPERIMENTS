@@ -1,0 +1,40 @@
+**Schema (MySQL v5.7)**
+
+    create table dept_details(Did integer,Dname varchar(10),primary key(Did));
+    create table student(USN integer,NAME varchar(10),Dept_id integer,primary key(usn),foreign key(Dept_id) references dept_details(Did));
+    insert into dept_details values(100,'CSE');
+    insert into student values(123,'Abhi',100);
+
+---
+
+**Query #1**
+
+    select * from student;
+
+| USN | NAME | Dept_id |
+| --- | ---- | ------- |
+| 123 | Abhi | 100     |
+
+---
+
+[View on DB Fiddle](https://www.db-fiddle.com/)
+**Schema (MySQL v5.7)**
+
+    create table dept_details(Did integer,Dname varchar(10),primary key(Did));
+    create table student(USN integer,NAME varchar(10),Dept_id integer,primary key(usn),foreign key(Dept_id) references dept_details(Did));
+    insert into dept_details values(100,'CSE');
+    insert into student values(123,'Abhi',100);
+
+---
+
+**Query #1**
+
+    select * from dept_details;
+
+| Did | Dname |
+| --- | ----- |
+| 100 | CSE   |
+
+---
+
+[View on DB Fiddle](https://www.db-fiddle.com/)
